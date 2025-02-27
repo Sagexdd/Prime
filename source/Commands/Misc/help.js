@@ -1,8 +1,8 @@
 /** 
 
-@code Fucked by manas 
+@code Fucked by stxrs 
 
-@for support join https://discord.gg/coderz
+@for support join https://dsc.gg/kraton-headquarters
 
 @this code is licensed give credits to me before using
 
@@ -153,7 +153,7 @@ module.exports = {
             }
           )
           .setImage(
-            "https://cdn.discordapp.com/attachments/971701889223782400/1286758037817921607/Sia_Canary.gif?ex=6725c88f&is=6724770f&hm=3fbac60141df32658b20c849b2bd10566d311bd2a51d5c76bc53bed1a742e08d&"
+            "https://media.discordapp.net/attachments/1343520136002535486/1344249071476543569/KRANTON_MUSIC.png?ex=67c0e1c1&is=67bf9041&hm=b670d1be005f25e8f834f475a4799174fe4667b3d0696da911d4d9b9b376d5a8&"
           )
           .setFooter({
             text: `Requested by ${
@@ -270,7 +270,7 @@ module.exports = {
                   iconURL: message.author.displayAvatarURL({ dynamic: true }),
                 })
                 .setImage(
-                  "https://cdn.discordapp.com/attachments/971701889223782400/1286758037817921607/Sia_Canary.gif?ex=6725c88f&is=6724770f&hm=3fbac60141df32658b20c849b2bd10566d311bd2a51d5c76bc53bed1a742e08d&"
+                  "https://media.discordapp.net/attachments/1343520136002535486/1344249071476543569/KRANTON_MUSIC.png?ex=67c0e1c1&is=67bf9041&hm=b670d1be005f25e8f834f475a4799174fe4667b3d0696da911d4d9b9b376d5a8&"
                 );
               await interaction.update({
                 embeds: [allCommandsEmbed],
