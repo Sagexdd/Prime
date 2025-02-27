@@ -37,7 +37,7 @@ module.exports = {
       console.error(error);
       // const payload = {
       //   content:
-      //     "- An error occurred while playing the song. Try Reporting it to the Developer [Team Avon](<https://discord.gg/S5zmG2RtJ3>)",
+      //     "- An error occurred while playing the song. Try Reporting it to the Developer [Team Kranton](<https://dsc.gg/kraton-headquarters>)",
       // };
       // return await client.message.send(message, payload);
     }
