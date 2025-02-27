@@ -1,43 +1,43 @@
 module.exports = {
   token: {
     manaspapa1:
-      "",
+      "MTMzMDQzNzA0Mzc1ODgyNTUwMg.GSt0-5.FvSfH3U36NhE-NQx965bBC7pk0cF1KAmgARhSQ",
     manaspapa2:
-      "",
+      "MTMzMDQzNzA0Mzc1ODgyNTUwMg.GSt0-5.FvSfH3U36NhE-NQx965bBC7pk0cF1KAmgARhSQ",
   },
-  tokenTopgg: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjkwNDMxNzE0MTg2NjY0NzU5MiIsImJvdCI6dHJ1ZSwiaWF0IjoxNjczNTI3OTYzfQ.WwA0KXh_nAQcBmR7BPqgLGyElYZheTQmguQfA2F6aNc",
+  tokenTopgg: ""
   mongoURL: {
-    Primary: "mongodb+srv://xtezz2:tejas49@sia.6srhf.mongodb.net/test",
-    Secondary: "mongodb+srv://xtezz2:tejas49@sia.6srhf.mongodb.net/test",
+    Primary: "mongodb+srv://CodeXDev:CodeX007@codex-public.lo930xf.mongodb.net/?retryWrites=true&w=majority",
+    Secondary: "mongodb+srv://CodeXDev:CodeX007@codex-public.lo930xf.mongodb.net/?retryWrites=true&w=majority",
   },
   clusterMode: "DEVELOPMENT",
-  def_prefix: "+",
-  vote_bypass: ["900981299022536757", "785708354445508649"],
-  vote:`https://top.gg/bot/904317141866647592/vote`,
-  developers: ["900981299022536757", "785708354445508649"],
+  def_prefix: "?",
+  vote_bypass: ["1328025198758461440"],
+  vote:``,
+  developers: ["900981299022536757"],
   managers: ["abc", "def"],
-  support: "https://discord.gg/coderz",
-  invite: "https://discord.com/oauth2/authorize?client_id=904317141866647592&permissions=8&scope=bot%20applications.commands",
-  color: "#2f3136",
+  support: "https://dsc.gg/kranton-headquarters",
+  invite: "https://discord.gg/kranton-music",
+  color: "#ff0000",
   webhook: {
-    guildAdd: `https://discord.com/api/webhooks/1246792443261747271/mYXEIHpuiw7hs9X5mA8mI5AfdBAxBx3jZjC5Vmjx1ShKxdDbkp1P7-hWwQ4RdEwYzk10`,
-    guildRemove: `https://discord.com/api/webhooks/1246792519178653787/m2J7sEcjQ3KnH2o-zJYc_PT527JGAmBWytK_NSxxhQML0mDaAFtv2VWlF2bDtCsCwkBa`,
-    commandRun: `https://discord.com/api/webhooks/1246751004867952702/ozZdbIwANHOK6UOVKCm2L5IpIR75MRPozT6nCFdYGp6xrKAtuhcd8toUlMaWB7mrqZ3Q`,
+    guildAdd: `https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh`,
+    guildRemove: `https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh`,
+    commandRun: `https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh`,
   },
   LOGGINGS: {
     guildAdd:
-      "https://discord.com/api/webhooks/1246792443261747271/mYXEIHpuiw7h",
+      "https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh",
     guildRemove:
-      "https://discord.com/api/webhooks/1246792519178653787/m2J7sEcjQ3KnH2o-zJYc_PT527JGAmBWytK_",
+      "https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh",
     commandRun:
-      "https://discord.com/api/webhooks/1246751004867952702/ozZdb",
+      "https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh",
   },
   nodes: [
     {
-      name: `Avon`,
-      url: `lavalink.jirayu.net:13592`,
-      auth: `youshallnotpass`,
-      secure: false,
+      name: `Kranton`,
+      url: `lava-v4.ajieblogs.eu.org:443`,
+      auth: `https://dsc.gg/ajidevserver`,
+      secure: true,
     },
     // {
     //   name: "Sia Main",
