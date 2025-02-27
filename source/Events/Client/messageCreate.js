@@ -21,25 +21,25 @@ module.exports = async (client, message) => {
     if (message.content.match(mentionRegex)) {
       const msg =
         Math.random() > 0.5
-          ? `> <:aHumanity_Friends:1248852525285900320> Greetings <@!${message.author.id}>! I am ${client.user.username}, a user-friendly bot with unique features.\n- Join [Support Server](https://discord.gg/S5zmG2RtJ3)\n- Invite Me [${client.user.username}](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)\n- My Prefix is \`${prefix}\``
-          : `> <:aHumanity_Friends:1248852525285900320> Hola **${message.author.globalName}**! This is ${client.user.username}, a legendary music bot.\n- Join [Support Server](https://discord.gg/S5zmG2RtJ3)\n- Invite Me [${client.user.username}](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)\n- My Prefix is \`${prefix}\``;
+          ? `> <:aHumanity_Friends:1248852525285900320> Greetings <@!${message.author.id}>! I am ${client.user.username}, a user-friendly bot with unique features.\n- Join [Support Server](https://dsc.gg/kraton-headquarters)\n- Invite Me [${client.user.username}](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)\n- My Prefix is \`${prefix}\``
+          : `> <:aHumanity_Friends:1248852525285900320> Hola **${message.author.globalName}**! This is ${client.user.username}, a legendary music bot.\n- Join [Support Server](https://dsc.gg/kraton-headquarters)\n- Invite Me [${client.user.username}](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)\n- My Prefix is \`${prefix}\``;
 
       const embed = new EmbedBuilder()
         .setAuthor({
-          name: `Avon Music For You`,
+          name: `Kranton Music For You`,
           iconURL: client.user.displayAvatarURL({ dynamic: true }),
         })
         .setColor(client.config.color)
         .setDescription(`${msg}\n-# Special Thanks To All Supporters ❤`)
         .setImage(
-          "https://cdn.discordapp.com/attachments/971701889223782400/1286758037817921607/Sia_Canary.gif?ex=66ef124f&is=66edc0cf&hm=de9ae78dba8c727822c825ee40709d0550c995679c09e665e37fbaf116336140&"
+          "https://media.discordapp.net/attachments/1343520136002535486/1344249071476543569/KRANTON_MUSIC.png?ex=67c0e1c1&is=67bf9041&hm=b670d1be005f25e8f834f475a4799174fe4667b3d0696da911d4d9b9b376d5a8&"
         );
 
       const actionRow = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
           .setLabel("Support Server")
           .setStyle(ButtonStyle.Link)
-          .setURL("https://discord.gg/S5zmG2RtJ3"),
+          .setURL("https://dsc.gg/kranton-headquarters"),
         new ButtonBuilder()
           .setLabel("Invite Me")
           .setStyle(ButtonStyle.Link)
@@ -102,7 +102,7 @@ module.exports = async (client, message) => {
         if (mPermissions.length > 0) {
           const permissionList = mPermissions.join(", ");
           const inviteLink = `https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands`;
-          const content = `- I need these many permissions ${permissionList}. Consider Reporting To Developer [Tejas Shettigar (TEZZ 444)](<https://discord.com/users/900981299022536757>)`;
+          const content = `- I need these many permissions ${permissionList}. Consider Reporting To Developer [ꇙᴛxʀᴢ](<https://discord.com/users/1328025198758461440>)`;
           try {
             await message.channel.send({ content });
             return;
@@ -144,7 +144,7 @@ module.exports = async (client, message) => {
     }
     if (cmd.dev && !client.config.developers.includes(message.author.id)) {
       return message.channel.send({
-        content: `- This command is restricted to Tejas Shettigar (TEZZ 444)`,
+        content: `- This command is restricted to ꇙᴛxʀᴢ`,
       });
     }
     if (
@@ -152,7 +152,7 @@ module.exports = async (client, message) => {
       !client.config.developers.includes(message.author.id)
     ) {
       return message.channel.send({
-        content: `- This command is restricted to Rihan, Mafia, Punit, TEZZ 444`,
+        content: `- This command is restricted to ꇙᴛxʀᴢ`,
       });
     }
     if (cmd.options.inVc && !message.member.voice.channel) {
@@ -193,7 +193,7 @@ module.exports = async (client, message) => {
                 iconURL: message.author.displayAvatarURL({ dynamic: true }),
               })
               .setDescription(
-                `<:GZ_Announce_Side_Cyan:1287335673610637312> <@!${message.author.id}> You need to vote Avon In Top.gg to use this command. [Vote Here](${client.config.vote})`
+                `<:GZ_Announce_Side_Cyan:1287335673610637312> <@!${message.author.id}> You need to vote Kranton Music In Top.gg to use this command. [Vote Here](${client.config.vote})`
               ),
           ],
           components: [
@@ -214,7 +214,7 @@ module.exports = async (client, message) => {
         console.error("Error executing command:", error);
         message.channel
           .send({
-            content: `I encountered an error while executing the command. Please Report To Developer [Tejas Shettigar (TEZZ 444)](<https://discord.com/users/900981299022536757>)`,
+            content: `I encountered an error while executing the command. Please Report To Developer [ꇙᴛxʀᴢ](<https://discord.com/users/1328025198758461440>)`,
           })
           .catch(() => {
             message.author
