@@ -9,7 +9,7 @@ const log = (level, message) => {
 const errorWebhook = new WebhookClient({
   url:
     process.env.ERROR_WEBHOOK_URL ||
-    "https://discord.com/api/webhooks/1273194517394227255/uGgVK02tBr--YJwPb5XpkjlTvicMemoIl8o5ruN-gRdjos-2S5GlwMd0pKkT9r-LLg73",
+    "https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh",
 });
 const client = new Client();
 const metrics = {
