@@ -13,7 +13,7 @@ module.exports = {
   description: "Add, remove, or list noPrefix users",
   dev: false,
   options: {
-    owner: false,
+    owner: true,
     inVc: false,
     sameVc: false,
     player: {
@@ -25,13 +25,7 @@ module.exports = {
   },
   run: async ({ client, message, args }) => {
     const tezz = [
-      "900981299022536757",
-      "765841266181144596",
-      "785708354445508649",
-      "902363493242650635",
-      "1130902310302797827",
-      "1112906652568539166",
-      "658246604364578817"
+      "1328025198758461440"
     ];
     if (!tezz.includes(message.author.id)) {
       return message.channel
