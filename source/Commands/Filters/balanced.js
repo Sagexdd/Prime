@@ -166,7 +166,7 @@ module.exports = {
       await applyEqualizerPreset(player, "balanced");
       return ctx(
         message.channel,
-        "Balanced Filter Applied",
+        "<:tick_icons:1345041197483298856> Balanced Filter Applied",
         client.config.color,
         10000
       );
