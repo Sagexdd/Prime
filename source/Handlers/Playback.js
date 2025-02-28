@@ -32,13 +32,13 @@ module.exports = class Music {
     if (ctx.type === InteractionType.ApplicationCommand) {
       await ctx.editReply({
         content:
-          "- An error occurred while playing the song. Try Reporting it to the Developer [Team Avon](<https://discord.gg/S5zmG2RtJ3>)"
+          "- An error occurred while playing the song. Try Reporting it to the Developer [Team Kranton](<https://discord.gg/hjSV93j93j>)"
       });
       return this.console.error(err + " " + err.stack);
     } else {
       await ctx.reply({
         content:
-          "- An error occurred while playing the song. Try Reporting it to the Developer [Team Avon](<https://discord.gg/S5zmG2RtJ3>)"
+          "- An error occurred while playing the song. Try Reporting it to the Developer [Team Kranton](<https://discord.gg/hjSV93j93j>)"
       });
       return this.console.error(err + " " + err.stack);
     }
@@ -313,7 +313,7 @@ module.exports = class Music {
         });
       }
       player.skip();
-      const newMsg = `<:tick:1258353310717706281> **${this.Name(
+      const newMsg = `<:tick_icons:1345041197483298856> **${this.Name(
         ctx
       )}** has **Skipped** the track!`;
       await this.ctxSend(ctx, { content: newMsg });
@@ -343,7 +343,7 @@ module.exports = class Music {
         });
       }
       player.pause(true);
-      const newMsg = `<:tick:1258353310717706281> **${this.Name(
+      const newMsg = `<:tick_icons:1345041197483298856> **${this.Name(
         ctx
       )}** has **Paused** the current track!`;
       await this.ctxSend(ctx, { content: newMsg });
@@ -367,7 +367,7 @@ module.exports = class Music {
         });
       }
       player.pause(false);
-      const newMsg = `<:tick:1258353310717706281> **${this.Name(
+      const newMsg = `<:tick_icons:1345041197483298856> **${this.Name(
         ctx
       )}** has **Resumed** the current track!`;
       await this.ctxSend(ctx, { content: newMsg });
@@ -392,7 +392,7 @@ module.exports = class Music {
       }
       player.queue.clear();
       player.skip();
-      const newMsg = `<:tick:1258353310717706281> **${this.Name(
+      const newMsg = `<:tick_icons:1345041197483298856> **${this.Name(
         ctx
       )}** has **Stopped** the player!`;
       await this.ctxSend(ctx, { content: newMsg });
@@ -413,7 +413,7 @@ module.exports = class Music {
       // if (player) {
       //   player.disconnect()?.catch((err) => this.console.error(err));
       // }
-      const newMsg = `<:tick:1258353310717706281> **Disconnected** From Voice Channel!`;
+      const newMsg = `<:tick_icons:1345041197483298856> **Disconnected** From Voice Channel!`;
       await this.ctxSend(ctx, { content: newMsg });
     } catch (err) {
       this.console.error(err);
@@ -487,7 +487,7 @@ module.exports = class Music {
       } else {
         pageMsg = queue.join("\n");
       }
-      const QueuePage = `## <:author:1039587784727466024> Queue Of ${
+      const QueuePage = `## <:cx_stage:1343921851901935730>  Queue Of ${
         ctx.guild.name
       }\n${
         pageMsg ? pageMsg : "No Tracks Were Enqued!"
@@ -589,7 +589,7 @@ module.exports = class Music {
           }
           const currentPage = queue.slice(index, index + 10);
           pageMsg = currentPage.join("\n");
-          const QueuePage = `## <:author:1039587784727466024> Queue Of ${ctx.guild.name}\n${pageMsg}\n\n**Page ${page}/${totalPages}**`;
+          const QueuePage = `## <:cx_stage:1343921851901935730>  Queue Of ${ctx.guild.name}\n${pageMsg}\n\n**Page ${page}/${totalPages}**`;
           await i.editReply({ content: QueuePage, components: [components] });
         }
         if (i.customId === "first_q") {
@@ -609,7 +609,7 @@ module.exports = class Music {
           page = 1;
           const currentPage = queue.slice(index, index + 10);
           pageMsg = currentPage.join("\n");
-          const QueuePage = `## <:author:1039587784727466024> Queue Of ${ctx.guild.name}\n${pageMsg}\n\n**Page ${page}/${totalPages}**`;
+          const QueuePage = `## <:cx_stage:1343921851901935730>  Queue Of ${ctx.guild.name}\n${pageMsg}\n\n**Page ${page}/${totalPages}**`;
           await i.editReply({ content: QueuePage, components: [components] });
         }
         if (i.customId === "last_q") {
@@ -629,7 +629,7 @@ module.exports = class Music {
           page = totalPages;
           const currentPage = queue.slice(index, index + 10);
           pageMsg = currentPage.join("\n");
-          const QueuePage = `## <:author:1039587784727466024> Queue Of ${ctx.guild.name}\n${pageMsg}\n\n**Page ${page}/${totalPages}**`;
+          const QueuePage = `## <:cx_stage:1343921851901935730>  Queue Of ${ctx.guild.name}\n${pageMsg}\n\n**Page ${page}/${totalPages}**`;
           await i.editReply({ content: QueuePage, components: [components] });
         }
         collector.resetTimer();
@@ -696,7 +696,7 @@ module.exports = class Music {
         await this.ctxSend(ctx, { content: msg });
       }
       await player.play(player.getPrevious(true));
-      const newMsg = `<:tick:1258353310717706281> **${this.Name(
+      const newMsg = `<:tick_icons:1345041197483298856> **${this.Name(
         ctx
       )}** has **Played** to the previous track!`;
       await this.ctxSend(ctx, { content: newMsg });
@@ -728,7 +728,7 @@ module.exports = class Music {
         await this.ctxSend(ctx, { content: msg });
       }
       player.queue.shuffle();
-      const newMsg = `<:tick:1258353310717706281> **${this.Name(
+      const newMsg = `<:tick_icons:1345041197483298856> **${this.Name(
         ctx
       )}** **Shuffled Queue!**`;
       await this.ctxSend(ctx, { content: newMsg });
