@@ -54,13 +54,13 @@ module.exports = async function AvonDispatcher(client, kazagumo) {
 
     client.utils.setVCStatus(
       player.voiceId,
-      `<a:tezz444:1301577123131031624> ${title} by ${author}`
+      `<a:spotify_GG:1344604739438121000> ${title} by ${author}`
     );
     const nowPlaying = new EmbedBuilder()
       .setAuthor({
         name: `Now Playing`,
         iconURL:
-          "https://cdn.discordapp.com/emojis/1301577123131031624.gif?size=128&quality=lossless" ??
+          "https://cdn.discordapp.com/emojis/1344604739438121000.gif?size=128&quality=lossless" ??
           track.requester.displayAvatarURL({ dynamic: true }),
         url: track.uri,
       })
@@ -68,12 +68,12 @@ module.exports = async function AvonDispatcher(client, kazagumo) {
       .setThumbnail(thumbnail)
       .addFields(
         {
-          name: "<a:tezzRequester:1301587466117189676> Chosen by",
+          name: "<a:emoji_68:1345037732677812389> Chosen by",
           value: ops,
           inline: true,
         },
         {
-          name: "<a:Duration:1039591831937232917> Duration",
+          name: "<:time1:1345039797709967370> Duration",
           value: track.isStream
             ? "Live"
             : await client.utils.convertTime(track.length),
@@ -186,7 +186,7 @@ module.exports = async function AvonDispatcher(client, kazagumo) {
     let prefix = await client.utils.getPrefix(player.guildId);
     client.utils.setVCStatus(
       player.voiceId,
-      `${prefix ?? "+"}play <song name> And Enjoy!`
+      `${prefix ?? "?"}play <song name> And Enjoy!`
     );
     player.data.get("message")?.delete();
     let data = await GuildSchema.findOne({ id: player.guildId });
