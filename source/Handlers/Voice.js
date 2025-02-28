@@ -94,7 +94,7 @@ class VoiceStateHandler {
                 if (channel) {
                     const embed = new EmbedBuilder()
                         .setColor(this.client.config?.color || '#ff0000')
-                        .setAuthor({name:`Avon Music System`,iconURL:this.client.user.displayAvatarURL()})
+                        .setAuthor({name:`Kranton Music System`,iconURL:this.client.user.displayAvatarURL()})
                         .setDescription(`Left the voice channel due to inactivity (5 minutes with no listeners).\n-# Use 24/7 to keep the bot in the voice channel.`);
                     await channel.send({ embeds: [embed] }).catch(() => {});
                 }
