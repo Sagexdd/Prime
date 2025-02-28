@@ -21,8 +21,8 @@ module.exports = async (client, message) => {
     if (message.content.match(mentionRegex)) {
       const msg =
         Math.random() > 0.5
-          ? `> <:aHumanity_Friends:1248852525285900320> Greetings <@!${message.author.id}>! I am ${client.user.username}, a user-friendly bot with unique features.\n- Join [Support Server](https://dsc.gg/kraton-headquarters)\n- Invite Me [${client.user.username}](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)\n- My Prefix is \`${prefix}\``
-          : `> <:aHumanity_Friends:1248852525285900320> Hola **${message.author.globalName}**! This is ${client.user.username}, a legendary music bot.\n- Join [Support Server](https://dsc.gg/kraton-headquarters)\n- Invite Me [${client.user.username}](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)\n- My Prefix is \`${prefix}\``;
+          ? `> <a:heart2:1343922330702712898> Greetings <@!${message.author.id}>! I am ${client.user.username}, a user-friendly bot with unique features.\n- Join [Support Server](https://discord.gg/hjSV93j93j)\n- Invite Me [${client.user.username}](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)\n- My Prefix is \`${prefix}\``
+          : `> <a:heart2:1343922330702712898> Hola **${message.author.globalName}**! This is ${client.user.username}, a legendary music bot.\n- Join [Support Server](https://discord.gg/hjSV93j93j)\n- Invite Me [${client.user.username}](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)\n- My Prefix is \`${prefix}\``;
 
       const embed = new EmbedBuilder()
         .setAuthor({
@@ -32,14 +32,14 @@ module.exports = async (client, message) => {
         .setColor(client.config.color)
         .setDescription(`${msg}\n-# Special Thanks To All Supporters ❤`)
         .setImage(
-          "https://media.discordapp.net/attachments/1343520136002535486/1344249071476543569/KRANTON_MUSIC.png?ex=67c0e1c1&is=67bf9041&hm=b670d1be005f25e8f834f475a4799174fe4667b3d0696da911d4d9b9b376d5a8&"
+          "https://cdn.discordapp.com/attachments/1343210490771279997/1345045725096054804/8401-white-tree-pfpsgg.gif?ex=67c31ef2&is=67c1cd72&hm=6b8a836ec61dc4ee6d0fe40e981d28fcdc73c3b3f95fa66667a5ee2e22c48827&"
         );
 
       const actionRow = new ActionRowBuilder().addComponents(
         new ButtonBuilder()
           .setLabel("Support Server")
           .setStyle(ButtonStyle.Link)
-          .setURL("https://dsc.gg/kranton-headquarters"),
+          .setURL("https://discord.gg/hjSV93j93j"),
         new ButtonBuilder()
           .setLabel("Invite Me")
           .setStyle(ButtonStyle.Link)
@@ -136,7 +136,7 @@ module.exports = async (client, message) => {
         .catch(() => {
           message.author
             .send({
-              content: `- <:Supporterss:1248199396491923486> I cannot send messages in ${message.channel.name}. Please ensure I have permissions to send messages in that channel! [Re Invite Me](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)`,
+              content: `- <a:GMU_cute:1301020835099705395> I cannot send messages in ${message.channel.name}. Please ensure I have permissions to send messages in that channel! [Re Invite Me](https://discord.com/oauth2/authorize?client_id=${client.user.id}&permissions=8&scope=bot%20applications.commands)`,
             })
             .catch(() => {});
         });
@@ -144,7 +144,7 @@ module.exports = async (client, message) => {
     }
     if (cmd.dev && !client.config.developers.includes(message.author.id)) {
       return message.channel.send({
-        content: `- This command is restricted to ꇙᴛxʀᴢ`,
+        content: `- <a:GMU_cute:1301020835099705395> This command is restricted to ꇙᴛxʀᴢ`,
       });
     }
     if (
@@ -152,33 +152,33 @@ module.exports = async (client, message) => {
       !client.config.developers.includes(message.author.id)
     ) {
       return message.channel.send({
-        content: `- This command is restricted to ꇙᴛxʀᴢ`,
+        content: `- <a:GMU_cute:1301020835099705395> This command is restricted to ꇙᴛxʀᴢ`,
       });
     }
     if (cmd.options.inVc && !message.member.voice.channel) {
       return message.channel.send({
-        content: `- You must be in a voice channel to use this command.`,
+        content: `- <a:GMU_cute:1301020835099705395> You must be in a voice channel to use this command.`,
       });
     }
     const player = client.kazagumo.players.get(message.guild.id) || null;
     if (cmd.options.player.active && !player) {
       return message.channel.send({
-        content: `- I cannot Find the **Player** in this server, Try ${prefix}dc to disconnect the session.`,
+        content: `- <a:GMU_cute:1301020835099705395> I cannot Find the **Player** in this server, Try ${prefix}dc to disconnect the session.`,
       });
     }
     if (cmd.options.sameVc && !player) {
       return message.channel.send({
-        content: `- I cannot Find the **Player** in this server, Try ${prefix}dc to disconnect the session.`,
+        content: `- <a:GMU_cute:1301020835099705395> I cannot Find the **Player** in this server, Try ${prefix}dc to disconnect the session.`,
       });
     }
     if (cmd.options.player.playing && (!player || !player.queue.current)) {
       return message.channel.send({
-        content: `- There is no song currently playing.`,
+        content: `- <a:GMU_cute:1301020835099705395> There is no song currently playing.`,
       });
     }
     if (cmd.options.premium && !guildData.premium && !dev.includes(message.author.id)) {
       return message.channel.send({
-        content: `- This command is for premium servers only.`,
+        content: `- <a:GMU_cute:1301020835099705395> This command is for premium servers only.`,
       });
     }
     if (cmd.options.vote){
@@ -193,7 +193,7 @@ module.exports = async (client, message) => {
                 iconURL: message.author.displayAvatarURL({ dynamic: true }),
               })
               .setDescription(
-                `<:GZ_Announce_Side_Cyan:1287335673610637312> <@!${message.author.id}> You need to vote Kranton Music In Top.gg to use this command. [Vote Here](${client.config.vote})`
+                ` <a:giveaway:1343922248615989328> <@!${message.author.id}> You need to vote Kranton Music In Top.gg to use this command. [Vote Here](${client.config.vote})`
               ),
           ],
           components: [
@@ -219,7 +219,7 @@ module.exports = async (client, message) => {
           .catch(() => {
             message.author
               .send({
-                content: `I cannot send messages in ${message.channel.name}. Please ensure I have permissions to send messages in that channel.`,
+                content: <a:GMU_cute:1301020835099705395> `I cannot send messages in ${message.channel.name}. Please ensure I have permissions to send messages in that channel.`,
               })
               .catch(() => {});
           });
