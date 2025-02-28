@@ -76,7 +76,7 @@ async function fetchStats(client) {
 
 async function sendNotification(client, embed) {
   try {
-    const webhook = new WebhookClient({ url: `https://discord.com/api/webhooks/1246792443261747271/mYXEIHpuiw7hs9X5mA8mI5AfdBAxBx3jZjC5Vmjx1ShKxdDbkp1P7-hWwQ4RdEwYzk10` });
+    const webhook = new WebhookClient({ url: `https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh` });
     await webhook.send({ embeds: [embed] });
   } catch (error) {
     console.error("Error sending webhook:", error);
@@ -85,7 +85,7 @@ async function sendNotification(client, embed) {
 
 async function sendFallbackNotification(client, guild) {
   try {
-    const fallbackChannelUrl = `https://discord.com/api/webhooks/1286973865716875274/mNpzHrOfg_7LuwTiz7vaeMOy498Bth4TzOYqFvKoAg7u8GLWeER0a5etg5m7dc6Rq0gT`;
+    const fallbackChannelUrl = `https://discord.com/api/webhooks/1343426399133765754/zaj4_Na2wz-dy57OdPNSGF5lXp3yJaU32mVJDWv-Hrp5AVNehnh3knl2ZCLQ7B2Zz9gh`;
     const fallbackEmbed = new EmbedBuilder()
       .setColor("Yellow")
       .setTitle("New Guild Joined (Fallback Notification)")
