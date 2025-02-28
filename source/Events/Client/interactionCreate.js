@@ -55,7 +55,7 @@ async function PauseResume(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -67,7 +67,7 @@ async function PauseResume(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -79,7 +79,7 @@ async function PauseResume(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -94,7 +94,7 @@ async function PauseResume(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -151,7 +151,7 @@ async function Skip(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -163,7 +163,7 @@ async function Skip(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -175,7 +175,7 @@ async function Skip(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -190,7 +190,7 @@ async function Skip(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -202,7 +202,7 @@ async function Skip(interaction, client) {
   const embed = new EmbedBuilder()
     .setColor(client.config.color)
     .setAuthor({
-      name: "Avon Music Controller",
+      name: "Kranton Music Controller",
       iconURL: interaction.guild.iconURL({ dynamic: true }),
     })
     .setDescription(`**Skipped** The Current Track`);
@@ -215,7 +215,7 @@ async function Stop(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -227,7 +227,7 @@ async function Stop(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -239,7 +239,7 @@ async function Stop(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -254,7 +254,7 @@ async function Stop(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -266,7 +266,7 @@ async function Stop(interaction, client) {
   const embed = new EmbedBuilder()
     .setColor(client.config.color)
     .setAuthor({
-      name: "Avon Music Controller",
+      name: "Kranton Music Controller",
       iconURL: interaction.guild.iconURL({ dynamic: true }),
     })
     .setDescription(`**Stopped** The Music Player & Left The Voice Channel`);
@@ -279,7 +279,7 @@ async function Settings(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -291,7 +291,7 @@ async function Settings(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -303,7 +303,7 @@ async function Settings(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -318,7 +318,7 @@ async function Settings(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -330,7 +330,7 @@ async function Settings(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(`Settings Are **Disabled** When Music Is Paused`);
@@ -494,7 +494,7 @@ async function Previous(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -506,7 +506,7 @@ async function Previous(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -518,7 +518,7 @@ async function Previous(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -533,7 +533,7 @@ async function Previous(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -546,7 +546,7 @@ async function Previous(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(`No Previous Track Was Found`);
@@ -556,7 +556,7 @@ async function Previous(interaction, client) {
   const embed = new EmbedBuilder()
     .setColor(client.config.color)
     .setAuthor({
-      name: "Avon Music Controller",
+      name: "Kranton Music Controller",
       iconURL: interaction.guild.iconURL({ dynamic: true }),
     })
     .setDescription(`I will Start Playing The **Previous** Track`);
@@ -570,7 +570,7 @@ async function Like(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -582,7 +582,7 @@ async function Like(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -594,7 +594,7 @@ async function Like(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
@@ -610,11 +610,11 @@ async function Like(interaction, client) {
     const embed = new EmbedBuilder()
       .setColor(client.config.color)
       .setAuthor({
-        name: "Avon Music Controller",
+        name: "Kranton Music Controller",
         iconURL: interaction.guild.iconURL({ dynamic: true }),
       })
       .setDescription(
-        `<:thumbs1down:1215368596692140073> You Have **Disliked** [**${player.queue.current.title}**](${player.queue.current.uri})`
+        `<a:GMU_cute:1301020835099705395> You Have **Disliked** [**${player.queue.current.title}**](${player.queue.current.uri})`
       );
     return interaction.reply({ embeds: [embed], ephemeral: true });
   }
@@ -623,11 +623,11 @@ async function Like(interaction, client) {
   const embed = new EmbedBuilder()
     .setColor(client.config.color)
     .setAuthor({
-      name: "Avon Music Controller",
+      name: "Kranton Music Controller",
       iconURL: interaction.guild.iconURL({ dynamic: true }),
     })
     .setDescription(
-      `<:heartt:1068244222060282026> You **Liked** [**${player.queue.current.title}**](${player.queue.current.uri})`
+      `<a:heart2:1343922330702712898> You **Liked** [**${player.queue.current.title}**](${player.queue.current.uri})`
     );
   return interaction.reply({ embeds: [embed], ephemeral: true });
 }
@@ -659,7 +659,7 @@ async function Lyrics(interaction, client) {
           new EmbedBuilder()
             .setColor(client.config.color)
             .setAuthor({
-              name: "Avon Music Controller",
+              name: "Kranton Music Controller",
               iconURL: interaction.guild.iconURL({ dynamic: true }),
             })
             .setDescription(
@@ -721,7 +721,7 @@ async function Lyrics(interaction, client) {
 }
 function emx(interaction, client) {
   return new EmbedBuilder().setColor(client.config.color).setAuthor({
-    name: "Avon Music Controller",
+    name: "Kranton Music Controller",
     iconURL: interaction.guild.iconURL({ dynamic: true }),
   });
 }
@@ -730,7 +730,7 @@ async function val(interaction, client) {
   const player = client.kazagumo.players.get(interaction.guildId);
   if (!interaction.member.voice.channel) {
     embed.setDescription(
-      `- You should be in a voice channel to use this button`
+      `- <a:GMU_cute:1301020835099705395> You should be in a voice channel to use this button`
     );
     return embed;
   }
@@ -796,7 +796,7 @@ function lyr(song, artist, lyrics, color, interaction) {
   const chunks = splitLyrics(lyrics);
   chunks.forEach((chunk, index) => {
     const embed = new EmbedBuilder().setColor(color).setAuthor({
-      name: "Avon Lyrics",
+      name: "Kranton Lyrics",
       iconURL: `https://cdn.discordapp.com/emojis/1205176894665003008.webp?size=128&quality=lossless`,
     });
     if (index === 0) {
