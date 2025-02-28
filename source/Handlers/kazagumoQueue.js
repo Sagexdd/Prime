@@ -3,7 +3,7 @@ const { KazagumoQueue } = require("kazagumo");
 class QueueError extends Error {
   constructor(message) {
     super(message);
-    this.name = "AvonQueueError";
+    this.name = "KrantonQueueError";
   }
 }
 
@@ -11,7 +11,7 @@ module.exports = class SiaQueue extends KazagumoQueue {
   constructor(player) {
     super(player);
     this.maxLength = 1000;
-    this.avon = "Avon Custom Url Queue";
+    this.avon = "Kranton Custom Url Queue";
     this.current = null;
     this.tracks = [];
   }
