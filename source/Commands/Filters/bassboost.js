@@ -167,7 +167,7 @@ module.exports = {
       await applyEqualizerPreset(player, "bass");
       return ctx(
         message.channel,
-        "Bassboost filter has been applied.",
+        "<:tick_icons:1345041197483298856> Bassboost filter has been applied.",
         client.config.color,
         10000
       );
