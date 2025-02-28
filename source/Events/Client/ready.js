@@ -18,10 +18,10 @@ class BotManager {
       await this.met();
       await this.lis();
       console.log(
-        `[Avon Music] Initialized successfully on cluster ${this.client.cluster.id}`
+        `[Kranton Music] Initialized successfully on cluster ${this.client.cluster.id}`
       );
     } catch (error) {
-      console.error("[Avon Music] Initialization error:", error);
+      console.error("[Kranton Music] Initialization error:", error);
       setTimeout(() => this.initialize(), 5000);
     }
   }
@@ -29,19 +29,19 @@ class BotManager {
     try {
       const statusConfigs = [
         {
-          name: "Tunes in {serverCount} servers",
+          name: "Kranton Headquarters",
           type: ActivityType.Playing,
         },
         {
-          name: "{userCount} users jamming",
+          name: "Kranton",
           type: ActivityType.Watching,
         },
         {
-          name: "+help | {songCount} songs played",
+          name: "?help",
           type: ActivityType.Listening,
         },
         {
-          name: "Music with {activeVoice} sessions",
+          name: "Kranton Music",
           type: ActivityType.Competing,
         },
       ];
@@ -59,12 +59,12 @@ class BotManager {
           });
           this.currentStatus = (this.currentStatus + 1) % statusConfigs.length;
         } catch (error) {
-          console.error("[Avon Music] Status update error:", error);
+          console.error("[Kranton Music] Status update error:", error);
         }
       }, this.statusInterval);
       this.intervals.add(interval);
     } catch (error) {
-      console.error("[Avon Music] Status initialization error:", error);
+      console.error("[Kranton Music] Status initialization error:", error);
     }
   }
   async met() {
@@ -75,7 +75,7 @@ class BotManager {
       }, this.metricsInterval);
       this.intervals.add(interval);
     } catch (error) {
-      console.error("[Avon Music] Metrics collection error:", error);
+      console.error("[Kranton Music] Metrics collection error:", error);
     }
   }
   async tezz() {
@@ -121,14 +121,14 @@ class BotManager {
         system: systemMetrics,
       };
     } catch (error) {
-      console.error("[Avon Music] Metrics collection error:", error);
+      console.error("[Kranton Music] Metrics collection error:", error);
       return null;
     }
   }
   async logMetrics(metrics) {
     if (!metrics) return;
     const embed = new EmbedBuilder()
-      .setTitle(`Avon Stats - Cluster ${metrics.clusterInfo.id}`)
+      .setTitle(`Kranton Stats - Cluster ${metrics.clusterInfo.id}`)
       .setColor(this.client.config.color)
       .setDescription(
         `**Cluster Info**\n- ID: ${metrics.clusterInfo.id}\n- Total Clusters: ${
@@ -201,7 +201,7 @@ class BotManager {
       webhook.send({ embeds: [embed] });
     } catch (error) {
       console.error(
-        "[Avon Music] Error sending metrics to log channel:",
+        "[Kranton Music] Error sending metrics to log channel:",
         error
       );
     }
@@ -211,7 +211,7 @@ class BotManager {
       const results = await this.client.cluster.broadcastEval(fn);
       return results.reduce((sum, value) => sum + value, 0);
     } catch (error) {
-      console.error("[Avon Music] Cluster evaluation error:", error);
+      console.error("[Kranton Music] Cluster evaluation error:", error);
       return 0;
     }
   }
@@ -225,35 +225,35 @@ class BotManager {
     try {
       await this.updateStatus();
     } catch (error) {
-      console.error("[Avon Music] Guild update handler error:", error);
+      console.error("[Kranton Music] Guild update handler error:", error);
     }
   }
   async handleError(error) {
-    console.error("[Avon Music] Client error:", error);
+    console.error("[Kranton Music] Client error:", error);
     try {
       const logChannel = await this.getLogChannel();
       if (logChannel) {
         const errorEmbed = new EmbedBuilder()
-          .setTitle("Avon Music Error")
+          .setTitle("Kranton Music Error")
           .setColor("Red")
           .setDescription(`\`\`\`${error.stack || error.message}\`\`\``)
           .setTimestamp();
         await logChannel.send({ embeds: [errorEmbed] });
       }
     } catch (logError) {
-      console.error("[Avon Music] Error logging error:", logError);
+      console.error("[Kranton Music] Error logging error:", logError);
     }
   }
   async handleDisconnect(event) {
     console.log(
-      "[Avon Music] Disconnected from Discord. Attempting to reconnect."
+      "[Kranton Music] Disconnected from Discord. Attempting to reconnect."
     );
     try {
       this.intervals.forEach((interval) => clearInterval(interval));
       this.intervals.clear();
       setTimeout(() => this.initialize(), 5000);
     } catch (error) {
-      console.error("[Avon Music] Disconnect handler error:", error);
+      console.error("[Kranton Music] Disconnect handler error:", error);
     }
   }
   formatBytes(bytes) {
