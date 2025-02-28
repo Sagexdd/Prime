@@ -8,7 +8,7 @@ const {
 const userSchema = require("../../Models/User");
 module.exports = {
   name: "noPrefix",
-  aliases: ["nop"],
+  aliases: ["np"],
   category: "",
   description: "Add, remove, or list noPrefix users",
   dev: false,
@@ -97,7 +97,7 @@ module.exports = {
           .setDescription(
             `**${
               user.globalName ? user.globalName : user.username
-            }** has been added to the Global No Prefix List`
+            } <:tick_icons:1345041197483298856> ** has been added to the Global No Prefix List`
           )
           .setColor(client.config.color)
           .setFooter({
