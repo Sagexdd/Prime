@@ -59,12 +59,12 @@ module.exports = {
   run: async ({ client, message, args, guildData }) => {
     try {
       const categoryEmojis = {
-        Misc: "<:misc:1301837560758276107>",
-        Music: "<:music_avon:1064924736833986642>",
-        Config: "<:x_setting:1301356402182324235>",
-        Filters: "<:Avon_Filters:1130897583242485891>",
-        Settings: "<:settings_avon:1066317766312874004>",
-        Games: "<:games_red:1246412396080140338>",
+        Misc: "<:info:1345041204978520157>",
+        Music: "<:icons_music:1344640601429250050>",
+        Config: "<:settings:1345041189178576946>",
+        Filters: "<:icons_list:1345041183172198460>",
+        Settings: "<:Settings1:1345041132391891036>",
+        Games: "<:icons_games:1343922167779295274>",
       };
       const getCategories = () => {
         const categories = [...new Set(client.commands.map((c) => c.category))];
@@ -133,27 +133,27 @@ module.exports = {
             iconURL: client.user.displayAvatarURL({ dynamic: true }),
           })
           .setDescription(
-            `<:Musica:1065097555039494144> Namaskar! <@${message.author.id}> to the Avon Help Desk!\n\n` +
-              `<:arrow:1031935599340437594> Use the buttons below to navigate\n` +
-              `<:arrow:1031935599340437594> Search for commands using \`${guildData.prefix}help <query>\`\n` +
-              `<:arrow:1031935599340437594> Select categories from the dropdown menu`
+            `<a:GMU_cute:1301020835099705395> Namaskar! <@${message.author.id}> to the Kranton Help Desk!\n\n` +
+              `<a:U_Seta_Branca:1345051994070585417> Use the buttons below to navigate\n` +
+              `<a:U_Seta_Branca:1345051994070585417> Search for commands using \`${guildData.prefix}help <query>\`\n` +
+              `<a:U_Seta_Branca:1345051994070585417> Select categories from the dropdown menu`
           )
           .addFields(
             {
-              name: "<:Stats:1286972586592309309> Stats",
+              name: "<:info:1345041204978520157> Stats",
               value: `Commands: ${client.commands.size} | Categories: ${
                 getCategories().length
               }`,
               inline: false,
             },
             {
-              name: "<:sia_waoo:1068431077573660754> Quick Search",
+              name: "<:IconSearch:1345041217238335518> Quick Search",
               value: `Use \`${guildData.prefix}help <query>\` to search for commands!`,
               inline: false,
             }
           )
           .setImage(
-            "https://media.discordapp.net/attachments/1343520136002535486/1344249071476543569/KRANTON_MUSIC.png?ex=67c0e1c1&is=67bf9041&hm=b670d1be005f25e8f834f475a4799174fe4667b3d0696da911d4d9b9b376d5a8&"
+            "https://cdn.discordapp.com/attachments/1343210490771279997/1345045725096054804/8401-white-tree-pfpsgg.gif?ex=67c31ef2&is=67c1cd72&hm=6b8a836ec61dc4ee6d0fe40e981d28fcdc73c3b3f95fa66667a5ee2e22c48827&75a4799174fe4667b3d0696da911d4d9b9b376d5a8&"
           )
           .setFooter({
             text: `Requested by ${
@@ -270,7 +270,7 @@ module.exports = {
                   iconURL: message.author.displayAvatarURL({ dynamic: true }),
                 })
                 .setImage(
-                  "https://media.discordapp.net/attachments/1343520136002535486/1344249071476543569/KRANTON_MUSIC.png?ex=67c0e1c1&is=67bf9041&hm=b670d1be005f25e8f834f475a4799174fe4667b3d0696da911d4d9b9b376d5a8&"
+                  "https://cdn.discordapp.com/attachments/1343210490771279997/1345045725096054804/8401-white-tree-pfpsgg.gif?ex=67c31ef2&is=67c1cd72&hm=6b8a836ec61dc4ee6d0fe40e981d28fcdc73c3b3f95fa66667a5ee2e22c48827&"
                 );
               await interaction.update({
                 embeds: [allCommandsEmbed],
