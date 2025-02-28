@@ -109,7 +109,7 @@ async function createQualityImage(currentQuality, theme = "neon") {
   }
   ctx.font = "300 20px 'Arial', sans-serif";
   ctx.fillStyle = colors.text;
-  ctx.fillText("IMMERSE YOURSELF IN CRYSTAL-CLEAR SOUND WITH AVON", 600, 600);
+  ctx.fillText("IMMERSE YOURSELF IN CRYSTAL-CLEAR SOUND WITH KRANTON", 600, 600);
 
   const buffer = canvas.toBuffer("image/png");
   return new AttachmentBuilder(buffer, {
@@ -326,7 +326,7 @@ module.exports = {
             currentTheme
           );
           const embed = new EmbedBuilder()
-            .setTitle("🎧 Avon HD Audio Experience")
+            .setTitle("🎧 Kranton HD Audio Experience")
             .setDescription(
               `Quality has been set to **${newQuality.toUpperCase()}**.\n\n${
                 qualityDescriptions[newQuality]
@@ -671,7 +671,7 @@ module.exports = {
         currentTheme
       );
       const embed = new EmbedBuilder()
-        .setTitle("🎧 Avon HD Audio Experience")
+        .setTitle("🎧 Kranton HD Audio Experience")
         .setDescription(
           `Quality has been set to **${getCurrentQuality().toUpperCase()}**.\n\n${
             qualityDescriptions[getCurrentQuality()]
