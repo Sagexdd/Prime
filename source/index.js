@@ -1,7 +1,28 @@
 const { ReClusterManager, HeartbeatManager, messageType } = require('discord-hybrid-sharding');
 const { avonlodepe } = require('./cluster');
 const { LoadBalancer } = require('./.gg/coderz');
-const config = require('./Config');
+const wait = require('wait');
+require('dotenv').config();
+const path = require('path');
+const ReXx = require(`./structures/ReXx.js`);
+const config = require(`${process.cwd()}/config.json`);
+
+const client = new ReXx();
+
+(async () => {
+    try {
+        await client.initializeMongoose();
+        await client.initializedata();
+        await wait(3000);
+        await client.loadEvents();
+        await client.loadlogs();
+        await client.loadMain();
+        await client.login(config.token.manaspapa ?? config.token.manaspapa2);
+    } catch (error) {
+        console.error("Failed to start client:", error);
+        process.exit(1);
+    }
+})();
 
 const manager = new avonlodepe(`./source/manasontop.js`, {
     totalShards: 1,
@@ -25,16 +46,19 @@ manager.extend(
         maxMissedHeartbeats: 5,
     })
 );
+
 const loadBalancer = new LoadBalancer(manager);
 loadBalancer.on('rebalance', (source, target) => {
     console.log(`Rebalancing: Moving load from Cluster ${source.id} to Cluster ${target.id}`);
     source.send({ content: 'Rebalancing to Cluster ' + target.id });
+
     async function moveShards() {
         const shards = await source.getShards();
         for (const shard of shards) {
             await source.moveShard(shard, target);
         }
     }
+
     moveShards().then(() => {
         console.log(`Rebalancing complete: Cluster ${source.id} -> Cluster ${target.id}`);
     }).catch(err => {
@@ -65,6 +89,7 @@ manager.on('clusterCreate', cluster => {
 manager.on('debug', message => {
     console.debug(`[Manager Debug] ${message}`);
 });
+
 async function run() {
     try {
         await manager.spawn({ delay: 7000, timeout: -1 });
@@ -80,4 +105,5 @@ async function run() {
         process.exit(1);
     }
 }
+
 run();
